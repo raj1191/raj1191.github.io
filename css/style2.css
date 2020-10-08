@@ -94,17 +94,17 @@ hr {
   text-transform: uppercase;
 }
 #menu a.navbar-brand:hover {
-  color: #cd65b5;
+  color: #344648;
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #7d8e95;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-  color: #cd65b5;
+  color: #344648;
 }
 .on {
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -187,7 +187,7 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#801b71d6', endColorstr='#80344648', GradientType=0 ); /* IE6-9 */
 }
 .intro h1 {
-  color: #7d8e95;
+  color: #ffffff;
   /* font-size: 72px; */
   font-weight: 800;
   letter-spacing: -1px;
@@ -209,7 +209,7 @@ hr {
   margin-top: 20px;
 }
 .intro span {
-  color: #7d8e95;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 300;
 }
@@ -249,14 +249,14 @@ header .intro-text {
 #services h2,
 h4,
 p {
-  color: #7d8e95;
+  color: #ffffff;
   text-transform: uppercase;
 }
 #about p {
   color: #888;
 }
 #services .section-title p {
-  color: #7d8e95;
+  color: #ffffff;
 }
 #testimonial .item p {
   color: #333;
@@ -435,18 +435,18 @@ ol.type li a:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#344648+0,1b71d6+100&0.6+0,0.6+100 */
   background: -moz-linear-gradient(
     left,
-    rgba(197, 77, 170, 0.6) 0%,
-    rgba(27, 113, 214, 0.6) 100%
+    rgb(241 241 241 / 61%) 0%,
+    rgb(52 70 72 / 73%) 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     left,
-    rgba(197, 77, 170, 0.6) 0%,
-    rgba(27, 113, 214, 0.6) 100%
+    rgb(241 241 241 / 61%) 0%,
+    rgb(52 70 72 / 73%) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to right,
-    rgba(197, 77, 170, 0.6) 0%,
-    rgba(27, 113, 214, 0.6) 100%
+    rgb(241 241 241 / 61%) 0%,
+    rgb(52 70 72 / 73%) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99344648', endColorstr='#991b71d6', GradientType=1 ); /* IE6-9 */
 }
