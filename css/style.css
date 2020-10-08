@@ -187,12 +187,18 @@ hr {
 }
 .intro h1 {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 72px;
+  /* font-size: 72px; */
   font-weight: 800;
   letter-spacing: -1px;
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .intro h1 {
+    /* font-size: 72px; */
+    font-weight: 0px !important;
+  }
 }
 .intro p {
   color: #fff;

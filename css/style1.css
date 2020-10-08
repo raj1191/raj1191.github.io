@@ -199,6 +199,12 @@ hr {
   margin-bottom: 20px;
   margin-top: 0;
 }
+@media only screen and (max-width: 600px) {
+  .intro h1 {
+    /* font-size: 72px; */
+    font-weight: 0px !important;
+  }
+}
 .intro p {
   color: #fff;
   font-size: 22px;
