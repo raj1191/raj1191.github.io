@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+   
+    <title>Hello, world!</title>
+    <style>
+        body{
+            color:#344648
+        }
+        h1,h3{
+            color: #f47735;
+        }
+        #myCarousel .carousel-item .mask {
+    position: absolute;
+    top: 0;
+	left:0;
+	height:100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+#myCarousel h4{
+	font-size:50px;
+	margin-bottom:15px;
+	color:#ffb076;
+	line-height:100%;
+	letter-spacing:0.5px;
+	font-weight:600;
+}
+.bg-light {
+    background-color: #f47735!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    /* color: #344648 !important;
+     */
+     color: #ffffff;
+}
+#myCarousel p{
+	font-size:18px;
+	margin-bottom:15px;
+	color:#ffffff;
+}
+#myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
+#myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
+
+#myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
+#myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
+#myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
+#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{-webkit-animation-duration: 1s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#myCarousel .container {max-width: 1430px;  }
+#myCarousel .carousel-item{height:100%; min-height:550px; }
+#myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
+
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
+
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	-webkit-transition-duration: .6s;
+	transition-duration: .6s;
+	-webkit-transition-property: opacity;
+	transition-property: opacity
+}
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+	opacity: 1
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+	opacity: 0
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0)
+}
+@supports (transform-style:preserve-3d) {
+	.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)
+	}
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+ 
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 3rem 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+.title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 44.7%;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-p{
+    text-align: justify;
+    padding: 1rem 6rem 0 0rem;
+    line-height: 2rem;
+}
+
+
+.fa {
+ display: initial !important;
+}
+
+
+/* Service Style 5 Css */
+.style-5 .single-service {
+  border: 1px solid #ddd;
+  padding: 25px 40px;
+  margin-bottom: 70px;
+  box-shadow: 0 5px 30px -5px #ccc;
+  position:relative;
+  -webkit-transition:.3s;
+  transition:.3s;
+  height: 300px;
+  text-align:center
+}
+.style-5 .single-service i.fa {
+	color: #0bbbc1;
+	font-size: 30px;
+	margin: 25px 0px;
+	border: 1px solid #0bbbc1;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	-webkit-transition:.5s;
+    transition:.5s
+    
+}
+.style-5 .single-service:after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	left: 0;
+	top: 0;
+	border-left: 3px solid #0bbbc1;
+	height: 0%;
+	z-index: 2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transition:.5s;
+	transition:.5s
+}
+.style-5 .single-service:before{
+	position: absolute;
+	content: "";
+	width: 0%;
+	right: 0;
+	bottom: 0;
+	border-right: 3px solid #0bbbc1;
+	height: 0%;
+	z-index: 2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transition:.5s;
+	transition:.5s
+}
+.style-5 .single-service:hover:before, .single-service:hover:after{
+	height:50%;
+	width:50%;
+}
+.style-5 .single-service:hover i.fa {
+	background-color: #0bbbc1;
+	border-color: #0bbbc1;
+	color: #fff;
+}
+.style-5 .single-service h3 {
+	position: relative;
+	font-weight: 400;
+	margin-top: 0px;
+	padding-top: 20px;
+	font-size: 22px;
+}
+.style-5 .single-service p {
+	font-weight: 300;
+}
+.style-5 .single-service h3:before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 12px;
+  background-color: #0bbbc1;
+  top: -25px;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.style-5 .single-service h3:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #0bbbc1;
+  left: 50%;
+  margin-left: -15px;
+  top: -13px;
+}
+
+/* Service Style 6 Css */
+.heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/*-----Testimonial-------*/
+.footer2 {
+     /* position: absolute; */
+     bottom: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+    /* height: 150px; */
+    background-color: #111;
+    text-align: center;
+}
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+#testimonial .title{
+    color: #ffffff;
+}
+
+
+/*  */
+/* Portfolio Section */
+#portfolio  {
+	padding: 120px 0;
+	background: #f6f6f6;
+}
+.categories {
+	padding-bottom: 40px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+#portfolio nav a{
+	display: inline-block;
+	margin-left: 20px;
+}
+#portfolio nav a {
+	color: #f47735;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 10px 20px;
+	border: 2px solid #f47735;
+	border-radius: 10px 0 10px 0;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+#portfolio nav a.active {
+	background: #f47735;
+	color: #fff;
+}
+#portfolio nav a:hover {
+	background: #f47735;
+	color: #fff;
+
+}
+#portfolio .nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+.w-100 {
+    height: 100vh !important;
+}
+
+
+#filter .portfolio-menu{
+	text-align:center;
+}
+#filter .portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+    transition:all .5s ease;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 2px solid #f47735;
+    border-radius: 10px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#filter .portfolio-item{
+	/*width:100%;*/
+}
+#filter .portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+.form-control{
+    margin: 1rem !important;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fotter-bottom{
+    padding: 0rem 10rem 1rem 10rem;
+}
+
+#bot-name{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    background-color: #3B5998;
+    /* margin-top: 2rem; */
+}
+#bot-name a{
+   
+    color: #ffb076 !important
+}
+#bot-name a :hover{
+  text-decoration: none !important;
+   color: #f47735  !important
+}
+.grey{
+    background: #f6f6f6;
+}
+/* ------testimonial  close-------*/
+    </style>
+  </head>
+  <body>
+   <!-- navbar start -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        
+      </ul>
+     
+    </div>
+  </nav>
+  <!-- navbar ends -->
+
+<!-- carousel starts -->
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="mask flex-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4>Welcome to the <br>
+                    world of prana</h4>
+                <p>Relax, Rejuvenate, Revitalize</p>
+                <a href="#">Click To Begin</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="./yog2.png" class="mx-auto" alt="slide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="mask flex-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4>Ready to begin <br>
+                    your Journey</h4>
+                <!-- <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                  necessitatibus praesentium voluptatum deleniti atque corrupti.</p> -->
+                  <a href="#">Click To Begin</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="./yog1.png" class="mx-auto" alt="slide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <div class="mask flex-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4>Present your <br>
+                  awesome product</h4>
+                <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                  necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
+                <a href="#">BUY NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/DGkR4OQ.png" class="mx-auto" alt="slide"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<!-- carousel ends -->
+
+<div class="container-fluid">
+<div class="row grey">
+    <div class="col-md-12"> 
+        
+        <h2 class="title">About Us</h2>
+    
+    </div>
+
+<div class="col-md-6" data-aos="flip-left" data-aos-duration="1000"><img src="./about3.png" style="
+    padding: 0 8rem;
+" width="100%" height="auto"></div>
+<div class="col-md-6" data-aos="flip-right" data-aos-duration="1000">
+    <h1>The Pranic Wellness Centre</h1>
+    <p class="aboutus-p">THE PRANASAKTHI NILAYAM, IS AFFILIATED TO PRANIC HEALING TRUST TAMILNADU., OUR PRIMARY PURPOSE IS TO TEACH, HEAL AND PROMOTE PRANIC HEALING AS A WAY TO EMPOWER PEOPLE TO HELP HEAL THEMSELVES, IMPROVE THEIR LIVES, HELP OTHERS AND DEVELOP A GREATER CONNECTION OR UNITY WITH THEIR DIVINE NATURE, THE SOUL. THE PRANASAKTHI NILAYAM IS LOCATED AT CHENNAI. WE ARE OFFERING VARIETY OF SERVICES LIKE MEDITATION, HEALING, TRAINING, NURTURING AND SO ON. OUR WELL PROFESSIONAL HEALERS ARE TRAINED TO HANDLE ALL SORT OF ILLNESSES WITH UTMOST LOVE AND CARE.</p>
+</div>
+</div>
+</div>
+
+	  
+	  <!-- Service Start -->
+      <section class="style-5 section-padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="section-title">
+                    <h2 class="title">Services</h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-globe"></i>
+                    <h3>HEALING</h3>
+                    <p>PRANIC HEALING HELPS TO IMPROVE PHYSICAL AND MENTAL HEALTH</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-code"></i>
+                    <h3>WOMEN WELLNESS</h3>
+                    <p>PRANIC WELLNESS CENTRE PERUNGUDI PROVIDES PROVEN TECHNIQUES OF PRANIC HEALING FOR DEALING WITH WOMEN FOCUSED HEALTH.</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-crop"></i>
+                    <h3>KIDS Z(H)EAL</h3>
+                    <p>PRANIC HEALING MAKES LIFE BETTER BY BRINGING HARMONIOUS AND UNDERSTANDING RELATIONSHIP BETWEEN PARENTS AND CHILDREN</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-star"></i>
+                    <h3>CORPORATE PROGRAM</h3>
+                    <p>AT PRANIC WELLNESS CENTRE, PERUNGUDI. WE OFFER SERVICES TO ENSURE THAT THE CONFLICTING OBJECTIVES OF EMPLOYEE SATISFACTION AND PROFITABILITY ARE MET.</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h3>DOOR STEP</h3>
+                    <p>HOME IS WHERE HEART IS! TO MAKE YOUR HOME A ‘HEAVEN’, WE PROVIDE DOORSTEP SERVICES</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1000">
+                 <div class="single-service">
+                    <i class="fa fa-heart"></i>
+                    <h3>CRYSTAL SPA</h3>
+                    <p>AT PERUNGUDI PRANIC WELLNESS CENTER, WE HARNESS THE POWER OF CRYSTALS FOR PHYSICAL AND MENTAL WELLBEING.</p>
+                    <!-- <a href="" class="border-btn">Read More</a> -->
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- Service End -->
+
+     <!-- Testimonials starts -->
+
+     <section id="testimonial" class="testimonial text-center">
+        <div class="section-title">
+            <h2 class="title">Testimonials</h2>
+         </div>
+        <div class="container">
+            <div class="row"> 
+
+            
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- events starts -->
+
+
+   
+      <section id="filter">
+        <div class="section-title">
+            <h2 class="title">Events</h2>
+         </div>
+        <div class="container">
+            <!-- <div class="row">
+               <div class="col-lg-12 text-center my-2">
+                  <h4>Isotope filter magical layouts with Bootstrap 4</h4>
+                   <p class="border-bottom border-dark p-2">Any questions you can ask on twitter @nitesh75malviya</p>
+               </div>
+            </div> -->
+            <div class="portfolio-menu mt-2 mb-4">
+               <ul>
+                  <li class="btn btn-outline-dark active" data-filter="*">All</li>
+                  <li class="btn btn-outline-dark" data-filter=".gts">Girls T-shirt</li>
+                  <li class="btn btn-outline-dark" data-filter=".lap">Laptops</li>
+                  <li class="btn btn-outline-dark text" data-filter=".selfie">selfie</li>
+               </ul>
+            </div>
+            <div class="portfolio-item row">
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
+                  </a>
+               </div>
+          
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" alt="">
+                  </a>
+               </div>
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
+                </a>
+             </div>
+             <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                <img class="img-fluid" src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="">
+                </a>
+             </div>
+             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                <img class="img-fluid" src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" alt="">
+                </a>
+             </div>
+             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" alt="">
+                </a>
+             </div>
+             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" alt="">
+                </a>
+             </div>
+               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- contact starts -->
+      
+<div class="max-w-screen-md mx-auto grey">
+    <div class="section-title">
+        <h2 class="title">Contact Us</h2>
+     </div>
+    
+    <div class="fotter-bottom">
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <textarea type="text" class="form-control" placeholder="Message"></textarea>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary float-right">SEND MESSAGE</button>
+              </div>
+        </div>
+        <div class="row">
+            
+            <div class="text-center grey footer2">
+               
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+              
+              </div>
+        </div>
+    
+    </div>
+      </div>
+  </div>
+  
+
+
+  <div id="bot-name">
+   
+      © 2020 DIGITIZEEME. All rights reserved. Designed by
+      <a href="https://digitizeeme.com/" rel="nofollow">DIGITIZE ME</a>
+   
+  </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+       $('#myCarousel').carousel({
+    interval: 3000,
+ })
+ $('.portfolio-menu ul li').click(function(){
+         	$('.portfolio-menu ul li').removeClass('active');
+         	$(this).addClass('active');
+         	
+         	var selector = $(this).attr('data-filter');
+         	$('.portfolio-item').isotope({
+         		filter:selector
+         	});
+         	return  false;
+         });
+         $(document).ready(function() {
+         var popup_btn = $('.popup-btn');
+         popup_btn.magnificPopup({
+         type : 'image',
+         gallery : {
+         	enabled : true
+         }
+         });
+         });
+ AOS.init();
+      </script>
+</body>
+</html>
