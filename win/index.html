@@ -55,7 +55,7 @@
     position: relative;
 }
 #what-we-do .card .card-block a{
-	color: #007b5e !important;
+	color: #f58634  !important;
 	font-weight:700;
 	text-decoration:none;
 }
@@ -72,7 +72,7 @@
 	font-family: FontAwesome;
     position: absolute;
     font-size: 39px;
-    color: #007b5e;
+    color: #f58634 ;
     left: 0;
 	-webkit-transition: -webkit-transform .2s ease-in-out;
     transition:transform .2s ease-in-out;
@@ -130,19 +130,30 @@
   </div>
 </nav>
 <!-- Header -->
+
 <header id="header">
-  <div class="intro">
-    <div class="overlay">
+  <section class="customer-logos1 slider">
+    <div class="slide"><img src="img/BANNER/CCTV security camera.gif" alt=""></div>
+    <div class="slide"><img src="img/BANNER/CCTV security camera (1).gif" alt=""></div>
+    <div class="slide"><img src="img/BANNER/CCTV security camera (2).gif" alt=""></div>
+    <!-- <div class="slide"><img src="img/client/colorfull.png" alt="colorfull"></div>
+    <div class="slide"><img src="img/client/sanctum.png" alt="sanctum"></div>  -->
+    
+  
+  </section>
+ <!-- <div class="intro">
+
+     <div class="overlay">
       <div class="container">
         <div class="row">
-          <div class="intro-text">
+          <div class="intro-text hidde">
             <h1>Win Infotech</h1>
             <p>Solution For All Electronic Security Products</p>
             <a href="#about" class="btn btn-custom btn-lg page-scroll">Discover Story</a> </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </header>
 <!-- About Section -->
 <div id="about">
@@ -442,7 +453,7 @@
   </div>	
 </section>
 </div>
-</div>partners
+</div>
 <!-- /Services section -->
 
 
@@ -1191,6 +1202,17 @@
     </div>
   </div>
 </div>
+<div class="icon-bar1">
+  <a
+    href="https://api.whatsapp.com/send?phone=919962276500"
+    rel="noopener"
+    target="_blank"
+    class="whatsapp"
+    ><img
+    src="https://pluspng.com/img-png/whatsapp-png-whatsapp-logo-png-1000.png" alt="whtasapp-icon"
+    width="50px" height="50px" /></a
+  >
+</div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
@@ -1220,6 +1242,26 @@ $('.customer-logos').slick({
         breakpoint: 520,
         settings: {
             slidesToShow: 3
+        }
+    }]
+});
+$('.customer-logos1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1
+        }
+    }, {
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 1
         }
     }]
 });

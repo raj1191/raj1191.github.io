@@ -39,7 +39,7 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #8eb640;
+  color: #0282c6;
 }
 a:hover,
 a:focus {
@@ -78,7 +78,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #8eb640;
+  background: #0282c6;
   margin: 0;
   margin-bottom: 40px;
   border: 0;
@@ -112,13 +112,13 @@ a:focus,
 #menu a.navbar-brand {
   font-family: "Dancing Script", cursive;
   font-size: 36px;
-  color: #8eb640;
+  color: #0282c6;
   font-weight: 700;
   letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #ddd;
+  color: #ffffff;
   font-weight: 500;
   font-size: 15px;
   padding: 5px 0;
@@ -127,7 +127,7 @@ a:focus,
   margin: 10px 15px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-  color: #8eb640;
+  color: #0282c6;
 }
 .on {
   background-color: #262626 !important;
@@ -137,7 +137,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #8eb640 !important;
+  color: #0282c6 !important;
   background-color: transparent;
 }
 .navbar-toggle {
@@ -145,8 +145,8 @@ a:focus,
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #8eb640;
-  border-color: #8eb640;
+  background-color: #0282c6;
+  border-color: #0282c6;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #fff;
@@ -169,7 +169,7 @@ a:focus,
 .btn-custom {
   text-transform: uppercase;
   color: #fff;
-  background-color: #72a411;
+  background-color: #f58634;
   border: 0;
   padding: 14px 20px;
   margin: 0;
@@ -193,7 +193,8 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) no-repeat center center;
+  background: url(../img/BANNER/CCTV\ security\ camera.gif) no-repeat center
+    center;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -204,7 +205,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.4);
 }
 .intro h1 {
-  font-family: "Dancing Script", cursive;
+  font-family: "fangsong";
   color: #fff;
   font-size: 10em;
   font-weight: 700;
@@ -230,6 +231,7 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 120px 0;
+  background: #f6f6f6;
 }
 #about h3 {
   font-size: 20px;
@@ -257,10 +259,12 @@ header .intro-text {
 }
 #products {
   padding: 120px 0 60px 0;
+  background: #f6f6f6;
 }
 /* Menu Section */
 #service {
   padding: 120px 0 60px 0;
+  background: #ffffff;
 }
 #service .section-title {
   /* background: #444 url(../img/menu-bg.jpg) center center no-repeat fixed; */
@@ -317,6 +321,7 @@ header .intro-text {
 }
 #partner {
   padding: 120px 0 120px 0;
+  background: #f6f6f6;
 }
 #security .section-title {
   /* background: #444 url(../img/gallery-bg.jpg) center center no-repeat fixed;
@@ -351,11 +356,11 @@ ol.type li a {
 }
 ol.type li a.active {
   color: #fff;
-  background-color: #8eb640;
+  background-color: #0282c6;
 }
 ol.type li a:hover {
   color: #fff;
-  background-color: #8eb640;
+  background-color: #0282c6;
 }
 .isotope-item {
   z-index: 2;
@@ -493,7 +498,7 @@ ol.type li a:hover {
 #call-reservation {
   padding: 90px 0;
   color: #fff;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb640+50,779936+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0282c6 +50,779936+100 */
   background: rgb(142, 182, 64); /* Old browsers */
   background: -moz-linear-gradient(
     top,
@@ -510,11 +515,11 @@ ol.type li a:hover {
     rgba(142, 182, 64, 1) 50%,
     rgba(119, 153, 54, 1) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb640', endColorstr='#779936', GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0282c6 ', endColorstr='#779936', GradientType=0 ); /* IE6-9 */
 }
 #call-reservation .overlay {
   padding: 80px 0;
-  background: #8eb640;
+  background: #0282c6;
 }
 #call-reservation h2 {
   font-family: "Open Sans", sans-serif;
@@ -534,7 +539,7 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px 0;
-  background: #f6f6f6;
+  background: #ffffff;
 }
 #contact .section-title p {
   color: #777;
@@ -612,7 +617,7 @@ label {
   padding: 50px 0 0 0;
 }
 #footer h3 {
-  color: #8eb640;
+  color: #0282c6;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -621,24 +626,26 @@ label {
 #footer .copyrights {
   padding: 20px 0;
   margin-top: 50px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,8eb640+50 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,0282c6 +50 */
   background: rgb(119, 153, 54); /* Old browsers */
   background: -moz-linear-gradient(
     top,
-    rgba(119, 153, 54, 1) 0%,
-    rgba(142, 182, 64, 1) 50%
+    rgb(245 136 55) 0%,
+    rgb(245 138 59) 50%
   ); /* FF3.6-15 */
+
   background: -webkit-linear-gradient(
     top,
-    rgba(119, 153, 54, 1) 0%,
+    rgb(245 136 55) 0%,
+    rgb(245 138 59) 50% rgba(119, 153, 54, 1) 0%,
     rgba(142, 182, 64, 1) 50%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    rgba(119, 153, 54, 1) 0%,
-    rgba(142, 182, 64, 1) 50%
+    rgb(245 136 55) 0%,
+    rgb(245 138 59) 50%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#8eb640', GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#0282c6 ', GradientType=0 ); /* IE6-9 */
 }
 #footer .social {
   margin: 20px 0 30px 0;
@@ -658,13 +665,13 @@ label {
 }
 #footer p {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #f5893a;
 }
 #footer a {
   color: #f6f6f6;
 }
 #footer a:hover {
-  color: #333;
+  color: #0282c6;
 }
 
 .slick-slide {
@@ -770,4 +777,45 @@ label {
 }
 .nav {
   padding-top: 1rem;
+}
+/*whatsapp css*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar1 {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+/* Style the icon bar links */
+.icon-bar1 a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar1 a:hover {
+  /*background-color: #000;*/
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  /*background: #00e676;*/
+  color: white;
+  z-index: 1;
+}
+/*whatsapp css*/
+.hidde {
+  visibility: hidden;
+}
+#menu.navbar-default {
+  background-color: rgb(167 167 167 / 73%) !important;
+  border-color: rgb(167 167 167 / 73%) !important;
+}
+#header {
+  padding-top: 100px;
 }
