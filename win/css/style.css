@@ -845,6 +845,10 @@ label {
   .on {
     padding: 10px 25px 10px 25px !important;
   }
+  #service .menu-section {
+    margin: 0 20px 20px;
+    text-align: center;
+  }
 }
 #service a {
   color: #555;
