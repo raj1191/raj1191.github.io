@@ -12,13 +12,13 @@ h2 {
   margin: 0 0 20px 0;
   font-weight: 500;
   font-size: 34px;
-  color: #333;
+  color: #0082c6;
   text-transform: uppercase;
 }
 h3 {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
-  color: #333;
+  color: #0082c6;
 }
 h4 {
   font-size: 24px;
@@ -132,7 +132,7 @@ a:focus,
 .on {
   background-color: #262626 !important;
   padding: 0 !important;
-  padding: 10px 0 !important;
+  padding: 10px 0 10px 20px !important;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -231,7 +231,10 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 120px 0;
-  background: #ffffff;
+  background: #f6f6f6;
+}
+.pad {
+  padding-top: 35px;
 }
 #about h3 {
   font-size: 20px;
@@ -271,11 +274,11 @@ header .intro-text {
   background-size: cover;
 }
 #service .section-title h2 {
-  color: #333;
+  color: #0082c6;
 }
 #service img {
-  width: 300px;
-  box-shadow: 15px 0 #a7c44c;
+  width: 100%;
+  /* box-shadow: 15px 0 #a7c44c; */
 }
 #service h3 {
   padding: 10px 0;
@@ -295,15 +298,16 @@ header .intro-text {
   margin: 20px 0;
   text-align: center;
 }
+
 #service .menu-item {
-  margin: 35px 0;
+  margin: 25px 0;
   font-size: 18px;
 }
 #service .menu-item-name {
   font-weight: 600;
   font-size: 17px;
   color: #555;
-  border-bottom: 2px dotted #333;
+  /* border-bottom: 2px dotted #333; */
 }
 #service .menu-item-description {
   font-style: italic;
@@ -330,7 +334,7 @@ header .intro-text {
   margin-bottom: 50px; */
 }
 #security .section-title h2 {
-  color: #333;
+  color: #0082c6;
 }
 .categories {
   padding-bottom: 30px;
@@ -666,7 +670,7 @@ label {
 }
 #footer p {
   font-size: 15px;
-  color: #f5893a;
+  color: #ffffff;
 }
 #footer a {
   color: #f6f6f6;
@@ -814,9 +818,33 @@ label {
   visibility: hidden;
 }
 #menu.navbar-default {
-  background-color: rgb(167 167 167 / 73%) !important;
-  border-color: rgb(167 167 167 / 73%) !important;
+  background-color: #e2a648 !important;
+  border-color: #e2a648 !important;
 }
 #header {
   padding-top: 100px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .icon-bar1 {
+    position: fixed;
+    top: 95%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  .bg {
+    background: #4da9da;
+  }
+  #service a {
+    color: #ffffff !important;
+  }
+  .on {
+    padding: 10px 25px 10px 25px !important;
+  }
+}
+#service a {
+  color: #555;
 }
