@@ -107,8 +107,39 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
-   
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="show"> 
+      <div class="row"></div>
+        <div class="col-xs-6 col-md-6 center div1" >Call Us At <a href="tel:9962276500"><i class="fa fa-phone" aria-hidden="true"></i>+91 99622 76500</a></div>
+        <div class="col-xs-6 col-md-6 "> <a href="javascript:void(0);" onclick="JavaScript:window.open('http://esai.in/verify-membership.php?esaicode=SA0219TN','win2','scrollbars=no,resizable=no,width=700,height=440,left=150,top=200')" title="Membership Certificate"><img src="img/imag.jpeg" class="new"></a></div>
+      </div>
+      </div>
+        <nav id="menu" class="navbar navbar-default navbar-fixed-top mar">
+        <div class="container-fluid"> 
+         
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><img  src="img/logo.png" height="65px"/></a> </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#page-top" class="page-scroll">Home</a></li>
+              <li><a href="#about" class="page-scroll">About Us</a></li>
+              <li><a href="#products" class="page-scroll">Products</a></li>
+              <li><a href="#service" class="page-scroll">Installation and Services</a></li>
+              
+              <!-- <li><a href="#security" class="page-scroll">Security</a></li> -->
+              <li><a href="#partner" class="page-scroll">Our Brands</a></li>
+              <li><a href="#contact" class="page-scroll">Contact</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </nav>
+      </div>
+ <div class="hide"> 
+<nav id="menu" class="navbar navbar-default navbar-fixed-top mar1">
   <div class="container-fluid"> 
    
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -124,7 +155,7 @@
         <li><a href="#products" class="page-scroll">Products</a></li>
         <li><a href="#service" class="page-scroll">Installation and Services</a></li>
         
-        <li><a href="#security" class="page-scroll">Security</a></li>
+        <!-- <li><a href="#security" class="page-scroll">Security</a></li> -->
         <li><a href="#partner" class="page-scroll">Our Brands</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
       </ul>
@@ -132,6 +163,7 @@
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
+</div>
 <!-- Header -->
 
 <header id="header">
@@ -797,11 +829,20 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="phone" id="phone" class="form-control" placeholder="Phone" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="1" placeholder="Message" required></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
+        
         <div id="success"></div>
         <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
       </form>
@@ -828,8 +869,8 @@
     <div class="col-md-4">
       <h3>Contact Info</h3>
       <div class="contact-item">
-        <p>Phone: +91 99622 76500</p>
-        <p>Phone: +91 99404 13500</p>
+        <p> <a href="tel:+919962276500">Phone: +91 99622 76500</a></p>
+        <p><a href="tel:+919940413500">Phone: +91 99404 13500</a></p>
         <p>Email: wininfotechchennai@gmail.com</p>
       </div>
     </div>
@@ -1316,6 +1357,7 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 <script type="text/javascript">
   
   $(document).ready(function(){
@@ -1373,6 +1415,32 @@ $('.customer-logos1').slick({
         }
     }]
 });
+if ($(window).scrollTop() < 100) {
+       $(".show").show();
+       $(".hide").hide();
+       $(".mar").css({ 'top' : '90px'});
+
+        // > 100px from top - show div
+    }
+    else {
+      $(".show").hide();
+       $(".hide").show();
+       $(".mar").css({ 'top' : '0px'});
+    }
+});
+$(window).scroll(function() {
+  if ($(window).scrollTop() < 50) {
+       $(".show").show();
+       $(".hide").hide();
+       $(".mar").css({ 'top' : '90px'});
+
+        // > 100px from top - show div
+    }
+    else {
+      $(".show").hide();
+       $(".hide").show();
+       $(".mar").css({ 'top' : '0px'});
+    }
 });
 </script>
 </body>
