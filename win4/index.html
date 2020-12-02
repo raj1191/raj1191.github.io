@@ -37,10 +37,6 @@
       #what-we-do{
 	background:#f6f6f6;
 }
-.imgicon {
-  width: 50px !important;
-  margin: 1rem !important;
-}
 #what-we-do .card{
 	padding: 1rem!important;
 	border: none;
@@ -105,9 +101,6 @@
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
-}
-.w-100{
-  width: 100%;
 }
     </style>
 </head>
@@ -189,22 +182,29 @@
                     <div class="item">
                       <!-- The only change from the original bootstrap carousel is the "item" divs. I am using this in a CMS so I use inline styles for the background divs so I can set the background image files within the loop.  Just easier for my purposes.  Change the img tag to a div as follows: -->
                       <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/woman-camera.jpg" alt="First slide">-->
-                      <div >
-                        <img src="img/BANNER/B1.jpg" class="w-100">
+                      <div style="background:url('./img/B1.jpg') center center; background-size:cover;" class="slider-size">
+                        <!-- <div class="carousel-caption">
+                          <h3>A woman with a camera</h3>
+                          <p>She is probably taking a picture</p>
+                        </div> -->
                       </div>
                     </div>
                     <div class="item">
                       <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg" alt="Second slide">-->
-                      <div >
-                        <img src="img/BANNER/b2.jpg" class="w-100">
-                         
+                      <div style="background:url('./img/b2.jpg') center center; background-size:cover;" class="slider-size">
+                        <!-- <div class="carousel-caption">
+                          <h3>Down came the rain</h3>
+                          <p>And washed the spider out</p>
+                        </div> -->
                       </div>
                     </div>
                     <div class="item active">
                       <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg" alt="Third slide">-->
-                      <div >
-                        <img src="img/BANNER/b3.jpg" class="w-100">
-                        
+                      <div style="background:url('./img/b3.jpg') center center; background-size:cover;" class="slider-size">
+                        <!-- <div class="carousel-caption">
+                          <h3>Making love</h3>
+                          <p>She is probably taking a picture</p>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -318,7 +318,9 @@
       <!-- <div class="col-xs-12 col-md-6 col-lg-6 col-sm-12"><img src="./img/cctv.jpg">
       </div> -->
       <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 bg" >
+        <!-- <h2 class="text-center" style="color: #333;">Services</h2> -->
 
+        <div class="col-xs-12 col-md-6 col-lg-6 col-sm-12">
           	  <!-- Section Style 9 Start -->
       <section class="style-9 section-padding">
         <div class="container">
@@ -327,7 +329,7 @@
               <div class="col-xs-12 col-md-4">
                  <div class="single-service">
                   <div class="menu-item">
-                    <div class="menu-item-name"><img  class="imgicon" src="img/icon/camera.png"/> Security System </div>
+                    <div class="menu-item-name">CCTV Security System </div>
                     <!-- <div class="menu-item-price"> $30 </div>
                     <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div> -->
                   </div>
@@ -338,39 +340,38 @@
               <div class="col-xs-12 col-md-4">
                 <div class="single-service">
                   <div class="menu-item">
-                    <div class="menu-item-name"><img  class="imgicon" src="img/icon/biometric.png"/>  Biometric Attendance system</div>
+                    <div class="menu-item-name">Biometric Attendance system</div>
                   </div>
                 </div>
              </div>
              </a>
-             <a href="#biometric" class="page-scroll">
-              <div class="col-xs-12 col-md-4">
-                <div class="single-service">
-                  <div class="menu-item">
-                    <div class="menu-item-name"><img  class="imgicon" src="img/icon/accesscontorl.png"/>Access control system</div>
-                  </div>
+             <a href="#access" class="page-scroll">
+             <div class="col-xs-12 col-md-4">
+              <div class="single-service">
+                <div class="menu-item">
+                  <div class="menu-item-name">Access control system</div>
+                  <!-- <div class="menu-item-price"> $30 </div>
+                  <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div> -->
                 </div>
-             </div>
-             </a>
-            
- 
-         
-           <!-- <a href="#ha22" class="page-scroll">
+              </div>
+           </div>
+           </a>
+           <a href="#ha22" class="page-scroll">
            <div class="col-xs-12 col-md-4">
             <div class="single-service">
                
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/Home-Automation.png"/>  Home Automation </div>
+            <div class="menu-item-name"> Home Automation </div>
           </div>
             </div>
          </div>
-        </a> -->
+        </a>
         <a href="#as" class="page-scroll">
          <div class="col-xs-12 col-md-4">
           <div class="single-service">
              
             <div class="menu-item">
-              <div class="menu-item-name"><img  class="imgicon" src="img/icon/fire-alarm.png"/>  Alarm system </div>
+              <div class="menu-item-name">Alarm system </div>
             </div>
           </div>
        </div>
@@ -380,7 +381,7 @@
         <div class="single-service">
            
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/video-door-phone.png"/>   Video Door Phone</div>
+            <div class="menu-item-name">Video Door Phone</div>
           </div>
         </div>
      </div>
@@ -389,7 +390,7 @@
       <div class="col-xs-12 col-md-4">
         <div class="single-service">
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/safe.png"/>  Safe Locker </div>
+            <div class="menu-item-name"> Safe Locker </div>
           </div>
         </div>
       </div>
@@ -398,7 +399,7 @@
       <div class="col-xs-12 col-md-4">
         <div class="single-service">
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/metal-detector-gate.png"/>  Metal Detector </div>
+            <div class="menu-item-name"> Metal Detector </div>
           </div>
         </div>
       </div>
@@ -425,7 +426,7 @@
       <div class="col-xs-12 col-md-4">
         <div class="single-service">
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/intercom.png"/>   EPABX (Intercom) System</div>
+            <div class="menu-item-name"> EPABX (Intercom) System</div>
           </div>
         </div>
       </div>
@@ -443,7 +444,7 @@
       <div class="col-xs-12 col-md-4">
         <div class="single-service">
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/Home-Automation.png"/>   Home Automation</div>
+            <div class="menu-item-name"> Home Automation</div>
           </div>
         </div>
       </div>
@@ -452,7 +453,7 @@
       <div class="col-xs-12 col-md-4">
         <div class="single-service">
           <div class="menu-item">
-            <div class="menu-item-name"><img  class="imgicon" src="img/icon/laptop.png"/>   Multimedia Product</div>
+            <div class="menu-item-name"> Multimedia Product</div>
           </div>
         </div>
       </div>
@@ -461,8 +462,41 @@
         </div>
      </section>
    <!-- Section Style 9 End -->
-      
-
+        <div class="menu-section">
+          <!-- <h2 class="menu-section-title">Breakfast & Starters</h2> -->
+          <!-- <hr> -->
+          
+         
+         
+        
+         
+  
+          
+        
+          
+        
+        </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+            <div class="menu-section">
+          <!-- <h2 class="menu-section-title">Main Course</h2> -->
+          <!-- <hr> -->
+  
+         
+          
+          
+          <!-- <div class="menu-item">
+            <div class="menu-item-name"> <a href="#mj" class="page-scroll">Mobile Jammer </a></div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name"> <a href="#fireextinguish" class="page-scroll">Fire Extinguisher </a></div>
+          </div> -->
+          
+          
+          
+          
+        </div>
+          </div>
       </div>
      
     </div>
@@ -577,7 +611,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-        <div class="pad" id="access1">
+        <div class="pad" id="access">
         <div class="card">
           <div class="card-block">
             <h3 class="card-title">Access Control System</h3>
@@ -1384,7 +1418,7 @@ Perfect for a wide variety of surveillance applications including small to mediu
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4"><img width="100%" src="./img/image/15.jpg"/></div>
+            <div class="col-md-4"><img width="100%" src="./img/image/9.jpg"/></div>
             <div class="col-md-8" ><p>A Fire Alarm System is an active fire protection system that detects fire or the effects of fire, and as a result provides one or more of the following: notifies the occupants, notifies persons in the surrounding area, summons the fire service, and controls all the fire alarm components in a building. Fire alarm systems can include alarm initiating devices, alarm notification appliances, control units, fire safety control devices, annunciators, power supplies, and wiring.</p>
             <!-- <h3>Addressable fire alarm</h3>
             <p>Every Fire Alarm device is connected with the addressable fire alarm panel with its own unique address. When the fire is detected, the device shows the address on the main control panel, tells exactly which device has been activated. This feature enables you to find the exact location of a fire and immediately quenches the fire. Addressable fire alarm unit is superior, who can help prevent costly activities and saves the time when the fire is detected.</p>
