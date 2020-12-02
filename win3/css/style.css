@@ -10,13 +10,10 @@ html {
 }
 .new {
   float: right;
-  border: 1px solid rgb(0 0 0 / 50%);
-  padding: 1px;
-  /* width: 23%; */
+  width: 23%;
 }
 .div1 {
-  font-size: 2rem;
-  font-family: auto;
+  font-size: 3rem;
 }
 
 h2 {
@@ -856,7 +853,7 @@ label {
     z-index: 100;
   }
   .bg {
-    /* background: #4da9da; */
+    background: #4da9da;
   }
   #service a {
     color: #ffffff !important;
@@ -879,114 +876,5 @@ label {
   margin: auto;
   width: 50%;
   /* border: 3px solid green; */
-  padding: 16px;
-}
-
-.slider-size {
-  height: 400px;
-}
-ul.demo {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Service Style 9 Css */
-.style-9 .single-service {
-  border: 1px solid #ddd;
-  /* padding: 25px 18px; */
-  margin-bottom: 10px;
-  box-shadow: 0 5px 30px -5px #ccc;
-  position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-align: center;
-  /* background-color: #b4b4b4; */
-}
-.style-9 .single-service img {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-.style-9 .single-service:after {
-  position: absolute;
-  content: "";
-  width: 0%;
-  left: 0;
-  top: 0;
-  border-left: 3px solid #0bbbc1;
-  height: 0%;
-  z-index: 2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.style-9 .single-service:before {
-  position: absolute;
-  content: "";
-  width: 0%;
-  right: 0;
-  bottom: 0;
-  border-right: 3px solid #0bbbc1;
-  height: 0%;
-  z-index: 2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.style-9 .single-service:hover:before,
-.single-service:hover:after {
-  height: 50%;
-  width: 50%;
-}
-.style-9 .single-service:hover i.fa {
-  background-color: #0bbbc1;
-  border-color: #0bbbc1;
-  color: #fff;
-}
-.style-9 .single-service h3 {
-  position: relative;
-  font-weight: 400;
-  margin-top: 0px;
-  padding-top: 35px;
-  font-size: 22px;
-}
-.style-9 .single-service p {
-  font-weight: 300;
-}
-.style-9 .single-service h3:before {
-  position: absolute;
-  content: "";
-  width: 3px;
-  height: 12px;
-  background-color: #0bbbc1;
-  top: 0px;
-  left: 50%;
-  margin-left: -1.5px;
-}
-.style-9 .single-service h3:after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 3px;
-  background-color: #0bbbc1;
-  left: 50%;
-  margin-left: -15px;
-  top: 12px;
-}
-
-.style-9 .single-service:hover img {
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-}
-.style-9 .single-service img {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.carousel-indicators li {
-  border: 1px solid #0d0d0d !important;
-}
-.carousel-indicators .active {
-  background-color: #0d0d0d !important;
+  padding: 22px;
 }
